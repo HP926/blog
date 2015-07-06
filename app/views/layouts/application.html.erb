@@ -26,8 +26,8 @@
       <li><a href="http://twitter.com">Twitter</a></li>
       <li><a href="http://facebook.com">Facebook</a></li>
     </ul>
-    <% if !user_singned_in? %>
-    <p class="sign_in">Admin Login</p>
+    <% if !user_signed_in? %>
+      <p class="sign_in"><%= link_to "Admin Login", new_user_session_path %></p>
     <% end %>
   </div>
 
